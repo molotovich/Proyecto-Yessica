@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs HTML</title>
+    <link rel="stylesheet" type="text/css" href="/css/estiloFormulario.css">
+    
+</head>
+<body>
+    <center><h1>Formulario</h1></center>
+    <center><h3>Yessica Gonzalez Acopa</h3></center>
+    <form>
+        <fieldset>
+            <legend><h3><i>Datos personales</i></h3></legend>
+            <label for="nombre"><b>Nombre completo: </b></label>
+            <input id="nombre" type="text"><br><br>
+    
+            <label for="sexo"><b>Sexo: </b></label>
+            
+            <div class="inline-block-container">
+                <label for="Masculino">Masculino</label>
+                <input type="radio" id="masculino" name="genero" value="Masculino" checked>
+            </div>
+
+            <div class="inline-block-container">
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="femenino" name="genero" value="femenino">
+            </div>
+
+            <br><br>
+            
+            <div class="inline-block-container">
+                <label for="seleccionar"><b>Seleccionar: </b></label>
+                <input type="checkbox" id="seleccionar" value="">
+            </div>
+
+            <br><br>
+            
+            <label for="fechaNacimiento"><b>Fecha de Nacimiento:</b></label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+            <br><br>
+    
+            <label for="email"><b>Email: </b></label>
+            <input id="email" type="email"><br><br>
+
+            <label for="telefono"><b>Teléfono:</b></label>
+            <input id="telefono" type="tel" pattern="[0-9]{10}" placeholder="Ej. 1234567890"><br><br>
+
+            <label for="direccion"><b>Dirección:</b></label>
+            <textarea rows="3" cols="50" placeholder="Dirección" id="direccion"></textarea><br><br>
+
+            <label for="Carrera"><b>Carrera:</b></label>
+            <select name="Carrera" id="Carrera">
+                <option value="LISC">Lic.Ing.Sistemas Computacionales</option>
+                <option value="LP">Lic.Publicidad</option>
+                <option value="LCC">Lic.Criminologia y criminalista</option>
+                <option value="LAGN">Lic.Administracion y gestion de negocios</option>
+                <option value="LMNG">Lic.Mercadotecnia y negocios digitales</option>
+            </select><br><br>
+
+            <label for="archivoAdjunto">Adjuntar archivo:</label>
+            <input type="file" id="archivoAdjunto" name="archivoAdjunto">
+
+            <label for="colorFavorito"><b>Color favorito:</b></label>
+            <input type="color" id="colorFavorito" name="colorFavorito"><br><br>
+
+            <label for="mensaje"><b>Escribe tu mensaje: </b></label>
+            <textarea rows="10" cols="50" placeholder="Mensaje" id="mensaje"></textarea>
+        </fieldset>  
+       
+        <input type="button" value="Enviar" onclick="enviarFormulario()">
+        <input type="reset" value="Reiniciar">
+
+    </form>  
+</body>
+</html>
