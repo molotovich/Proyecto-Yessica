@@ -5,29 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inputs HTML</title>
     <link rel="stylesheet" type="text/css" href="/css/estiloFormulario.css">
-    
 </head>
 <body>
     <center><h1>Formulario</h1></center>
-    <center><h3>Yessica Gonzalez Acopa</h3></center>
+    <center><h3>Alumnos UMAEE</h3></center>
     <form>
         <fieldset>
             <legend><h3><i>Datos personales</i></h3></legend>
+            
             <label for="nombre"><b>Nombre completo: </b></label>
             <input id="nombre" type="text"><br><br>
     
             <label for="sexo"><b>Sexo: </b></label>
-            
             <div class="inline-block-container">
-                <label for="Masculino">Masculino</label>
+                <label for="masculino">Masculino</label>
                 <input type="radio" id="masculino" name="genero" value="Masculino" checked>
             </div>
 
             <div class="inline-block-container">
                 <label for="femenino">Femenino</label>
-                <input type="radio" id="femenino" name="genero" value="femenino">
+                <input type="radio" id="femenino" name="genero" value="Femenino">
             </div>
-
+            
             <br><br>
             
             <div class="inline-block-container">
@@ -50,8 +49,8 @@
             <label for="direccion"><b>Dirección:</b></label>
             <textarea rows="3" cols="50" placeholder="Dirección" id="direccion"></textarea><br><br>
 
-            <label for="Carrera"><b>Carrera:</b></label>
-            <select name="Carrera" id="Carrera">
+            <label for="carrera"><b>Carrera:</b></label>
+            <select name="carrera" id="carrera">
                 <option value="LISC">Lic.Ing.Sistemas Computacionales</option>
                 <option value="LP">Lic.Publicidad</option>
                 <option value="LCC">Lic.Criminologia y criminalista</option>
@@ -59,7 +58,7 @@
                 <option value="LMNG">Lic.Mercadotecnia y negocios digitales</option>
             </select><br><br>
 
-            <label for="archivoAdjunto">Adjuntar archivo:</label>
+            <label for="archivoAdjunto"><b>Adjuntar archivo:</b></label>
             <input type="file" id="archivoAdjunto" name="archivoAdjunto">
 
             <label for="colorFavorito"><b>Color favorito:</b></label>
@@ -75,3 +74,4 @@
     </form>  
 </body>
 </html>
+
