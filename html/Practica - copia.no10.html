@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inputs HTML</title>
     <link rel="stylesheet" type="text/css" href="/css/estiloFormulario.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Young+Serif&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Dancing+Script&family=Young+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-    <center><h1>Formulario</h1></center>
-    <center><h3>Alumnos UMAEE</h3></center>
+    <center><h1><big>Formulario</big></h1></center>
     <form>
         <fieldset>
-            <legend><h3><i>Datos personales</i></h3></legend>
+           <legend><h3><i><big> &#10084;Inputs &#10084;</big></i></h3></legend>
             
-            <label for="nombre"><b>Nombre completo: </b></label>
+            <label for="nombre"><b><h4>Nombre completo: </h4></b></label>
             <input id="nombre" type="text"><br><br>
     
-            <label for="sexo"><b>Sexo: </b></label>
+            <label for="sexo"><b><h4>Sexo: </h4></b></label>
             <div class="inline-block-container">
                 <label for="masculino">Masculino</label>
                 <input type="radio" id="masculino" name="genero" value="Masculino" checked>
@@ -30,26 +37,30 @@
             <br><br>
             
             <div class="inline-block-container">
-                <label for="seleccionar"><b>Seleccionar: </b></label>
+                <label for="seleccionar"><b><h4>Seleccionar: </h4></b></label>
                 <input type="checkbox" id="seleccionar" value="">
-            </div>
+            </div>    
 
             <br><br>
             
-            <label for="fechaNacimiento"><b>Fecha de Nacimiento:</b></label>
+            <label for="fechaNacimiento"><b><h4>Fecha de Nacimiento:</h4></b></label>
             <input type="date" id="fechaNacimiento" name="fechaNacimiento">
             <br><br>
     
-            <label for="email"><b>Email: </b></label>
+            <label for="email"><b><h4>&#128231 Email: </h4></b></label>
             <input id="email" type="email"><br><br>
 
-            <label for="telefono"><b>Teléfono:</b></label>
+            <label for="contraseña"><b><h4>&#128274 Contraseña: </h4></b></label>
+            <input type="password" name="contrasena"><br><br>
+
+
+            <label for="telefono"><b><h4>&#128241 Teléfono:</h4></b></label>
             <input id="telefono" type="tel" pattern="[0-9]{10}" placeholder="Ej. 1234567890"><br><br>
 
-            <label for="direccion"><b>Dirección:</b></label>
+            <label for="direccion"><b><h4>&#127968 Dirección:</h4></b></label>
             <textarea rows="3" cols="50" placeholder="Dirección" id="direccion"></textarea><br><br>
 
-            <label for="carrera"><b>Carrera:</b></label>
+            <label for="carrera"><b><h4>Carrera:</h4></b></label>
             <select name="carrera" id="carrera">
                 <option value="LISC">Lic.Ing.Sistemas Computacionales</option>
                 <option value="LP">Lic.Publicidad</option>
@@ -58,18 +69,29 @@
                 <option value="LMNG">Lic.Mercadotecnia y negocios digitales</option>
             </select><br><br>
 
-            <label for="archivoAdjunto"><b>Adjuntar archivo:</b></label>
+            <label for="archivoAdjunto"><b><h4>&#128194 Adjuntar archivo:</h4></b></label>
             <input type="file" id="archivoAdjunto" name="archivoAdjunto">
 
-            <label for="colorFavorito"><b>Color favorito:</b></label>
+            <label for="colorFavorito"><b><h4>Color favorito:</h4></b></label>
             <input type="color" id="colorFavorito" name="colorFavorito"><br><br>
 
-            <label for="mensaje"><b>Escribe tu mensaje: </b></label>
+            <label for="hora"><b><h4>&#8986 Hora:</h4></b></label>
+            <input type="time" name="hora">
+
+            <label for="semana"><b><h4>&#128198 Semana:</h4></b></label>
+            <input type="week" name="semana">
+
+            <label for="mes"><b><h4>mes:</h4></b></label>
+            <input type="month" name="mes">
+
+            <label for="mensaje"><b><h4>&#9997 Escribe tu mensaje: </h4></b></label>
             <textarea rows="10" cols="50" placeholder="Mensaje" id="mensaje"></textarea>
         </fieldset>  
        
         <input type="button" value="Enviar" onclick="enviarFormulario()">
         <input type="reset" value="Reiniciar">
+
+        
 
     </form>  
 </body>
